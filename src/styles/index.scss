@@ -1,0 +1,165 @@
+// Core variables and mixins
+
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/variables';
+$icon-font-path:  '~bootstrap-sass/assets/fonts/bootstrap/';
+@import 'variables';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/mixins';
+
+// Reset and dependencies
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/normalize';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/print';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/glyphicons';
+
+// Core CSS
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/scaffolding';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/type';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/code';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/grid';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/tables';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/forms';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/buttons';
+
+// Components
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/component-animations';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/dropdowns';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/button-groups';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/input-groups';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/navs';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/navbar';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/pagination';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/pager';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/labels';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/badges';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/jumbotron';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/thumbnails';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/alerts';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/progress-bars';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/media';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/list-group';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/panels';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/wells';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/close';
+
+// Components w/ JavaScript
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/modals';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/tooltip';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/popovers';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/carousel';
+
+// Utility classes
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/utilities';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities';
+
+$main-color: rgb(90,99,136);
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('./ProximaNova-Light.otf');
+}
+
+@font-face {
+  font-family: 'Droid Sans Fallback';
+  src: url('./DroidSansFallbackFull.ttf');
+}
+
+body {
+  font-family: 'Droid Sans Fallback', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: $main-color;
+}
+
+
+a {
+  color: $main-color;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+
+  &:hover {
+    color: $main-color;
+    text-decoration: none;
+  }
+}
+
+ul {
+  margin: 0;
+  margin-right: 5px;
+  padding-right: 5px;
+}
+
+li {
+  list-style-type: square;
+}
+
+.app-background {
+  content: '';
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/background_en.png');
+  background-color: #DEDFE3;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top-panel {
+  color: $main-color;
+  height: 10em;
+  width: 100%;
+}
+
+.widget-rss-title {
+  display: inline-block;
+  font-size: 1.5em;
+  line-height: 2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.widget-notification-title {
+  display: inline-block;
+  font-size: 1.5em;
+  line-height: 2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.bullet {
+  font-family: Arial;
+}
+
+.panel-default {
+  border: 0;
+  box-shadow: none;
+
+  >.panel-heading {
+    background-color: transparent;
+    border-bottom: 0;
+    color: $main-color;
+    font-size: 2em;
+    font-weight: 900;
+    opacity: .9;
+  }
+}
+
+.vertical-hr {
+  height: 100%;
+
+  span {
+    border-right: 1px solid $main-color;
+    display: inline-block;
+    float: left;
+    height: 55%;
+    margin: 0 1.5em;
+    position: relative;
+    top: 1.9em;
+  }
+}

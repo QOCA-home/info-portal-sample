@@ -1,0 +1,18 @@
+.clock {
+  font-family: 'ProximaNova';
+  text-align: center;
+  top: -20px;
+  position: relative;
+
+  .time {
+    font-size: 6.5em;
+  }
+
+  .day {
+    top: -5;
+    font-size: 1.5em;
+    line-height: 0;
+    position: relative;
+    font-family: 'Droid Sans Fallback';
+  }
+}
